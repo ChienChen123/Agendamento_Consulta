@@ -69,7 +69,7 @@
                 </div>
 
                 <script>
-                            function limitarDiasUteis() {
+                          function limitarDiasUteis() {
                             const inputData = document.getElementById("pac_data");
                             const hoje = new Date().toISOString().split("T")[0];
                             inputData.setAttribute("min", hoje);
@@ -81,7 +81,6 @@
                                     }
                      });
                        }
-
                 </script>
 
 

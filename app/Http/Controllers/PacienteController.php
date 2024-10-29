@@ -91,7 +91,7 @@ class PacienteController extends Controller
 
     $mensagem = "Olá, Sr(a) {$nomeCliente}{$sobrenomeCliente}, aqui é da {$nomeClinica}. Seu agendamento com doutor(a) {$nomeMedico} foi agendado para {$data} às {$horario} horas. Obrigado!";
 
-    $chatId = '6124260229';
+    $chatId = '7752095050';
     $telegramService->sendMessage($chatId, $mensagem);
 
     if ($request->input('redirect') === 'index') {
@@ -122,7 +122,7 @@ public function formularioNovoPaciente()
     // Lista de horários permitidos
     $horariosPermitidos = $this->horariosPermitidos;
 
-    // Obter a data selecionada (ou defina uma data padrão)
+    // Obter a data selecionada 
     $dataSelecionada = request()->input('pac_data', date('Y-m-d')); // Padrão para a data atual
 
     // Obter horários ocupados para a data selecionada

@@ -23,6 +23,7 @@ return new class extends Migration
             $table->date('pac_data');
             $table->time('pac_horario')->format('H:i'); 
             $table->boolean('pac_ativo')->default(1);
+            $table->boolean('pac_disponivel')->default(1);
             $table->timestamps();
         });
         
